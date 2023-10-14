@@ -14,6 +14,13 @@ Contract URL at Taiko Block Explorer
 https://explorer.test.taiko.xyz/address/0xb68B2e2f9F32D513d957f127588FD4f51E54B054
 
 
+## About the contract functions
+The contract contains 3 functions. 
+1. reportMaliciousAddress - lets users report malicious address of bad actors in the space
+2. checkMaliciousAddress - returns the number of times this address has been reported for suspicious activities.
+3. maliciousAddressDetails - returns the number of reported times, and the original reporter of this malicious address.
+
+
 ## How to run
 1. Clone the repository by running
 "git clone https://github.com/desmau5/ethkl2023-teamFDUSD.git".
@@ -22,13 +29,6 @@ To run the front-end, open the "index.html" with a browser.
 
 2. To interact with the smart contract, visit this link -> https://explorer.test.taiko.xyz/address/0xb68B2e2f9F32D513d957f127588FD4f51E54B054
 Here, you can interact with the smart contract's function by connecting your wallet to the block explorer.
-
-
-## About the contract functions
-The contract contains 3 functions. 
-1. report malicious address of bad actors in the space
-2. check if an address has been reported before interacting with an address
-3. check the details of any reported address to view how many times it has been reported and who is the original reporter.
 
 
 ## Team Vision
