@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+</head>
+<body>
+    <div class="banner">        
+        <h1>DeComDAO - Decentralized Compliance DAO</h1>
+        <button id="connectWalletButton">Connect Wallet</button>
+    </div>
+    <script>
+        // Function to connect the MetaMask wallet
+        async function connectWallet() {
+            // Check if MetaMask is installed
+            if (typeof window.ethereum === 'undefined') {
+                alert('MetaMask is not installed. Please install it.');
+                return;
+            }
+            
+            try {
+                // Request account access from the user
+                await window.ethereum.request({ method: 'eth_requestAccounts' });
+                const web3 = new Web3(window.ethereum);
+                const accounts = await web3.eth.getAccounts();
+                
+                // You can now use the 'web3' object to interact with the wallet
+                console.log('Connected to MetaMask. Wallet address:', accounts[0]);
+                
+                const balance = await web3.eth.getBalance(accounts[0]);                            
+                const etherBalance = web3.utils.fromWei(balance, 'ether');
+                document.getElementById('connectWalletButton').textContent = 'Connected to Metamask';
+                
+            } catch (error) {
+                console.error('Error connecting to MetaMask:', error);
+            }
+        }
+    
+        // Add a click event listener to the button
+        const connectWalletButton = document.getElementById('connectWalletButton');
+        connectWalletButton.addEventListener('click', connectWallet);
+    </script>
+
+
+    <div class="main">
+        <form class="mainForm">
+            <div class="textboxTitle">
+                <label for="text-input" >Enter address here</label>
+            </div>
+            <div>
+                <input type="text" id="text-input" name="text-input" placeholder="Address" class="textbox">
+            </div>                        
+            <div class="dropdownTitle">
+                <label for="dropdown" class="dropdownTitle">Suspicious Activity</label>
+            </div>
+            <div>
+                <select id="dropdown" name="dropdown" class="dropdown">
+                    <option value="option1">Wallet Drainer</option>
+                    <option value="option2">Rugpull</option>
+                    <option value="option3">Malicious contract</option>
+                    <option value="option4">Criminal activity</option>
+                    <option value="option5">Hacker</option>
+                </select>
+            </div>                                      
+            <div class="twoButton">
+                <button type="button" id="button1">Report address</button>
+                <button type="button" id="button2">Check address</button>
+            </div>            
+        </form>
+    </div>    
+</body>
+</html>

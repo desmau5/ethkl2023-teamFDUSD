@@ -1,0 +1,99 @@
+body{
+    background-color: #414242;    
+    margin: 0;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: left;
+    padding: 20px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    height: 50px;
+}
+
+.banner img {
+    max-width: 100px;
+    height: auto;
+}
+
+.banner h1 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+#connectWalletButton{
+    margin-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: medium;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+}
+
+#connectWalletButton:hover{
+    background-color: #8d8a8a;
+    transition: all 40ms;
+}
+
+.main{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textboxTitle{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.dropdownTitle{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.textbox, .dropdown{
+    width: 500px;
+    height: 40px;
+}
+
+.twoButton{    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;    
+
+}
+
+#button1{    
+    background-color: rgb(235, 208, 60);
+}
+#button1:hover{
+    background-color: rgb(235, 208, 60, 50%);
+    transition: all 40ms;
+}
+
+#button2{
+    background-color: rgb(98, 143, 240);
+}#button2:hover{
+    background-color: rgba(98, 143, 240, 50%);
+}
+
+#button1, #button2{
+    font-family: Roboto, Arial, Helvetica, sans-serif;    
+    font-size: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: none;
+    border-color: white;
+    border-width: 1px;
+}
