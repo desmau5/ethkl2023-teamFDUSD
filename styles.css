@@ -72,21 +72,21 @@ body{
 
 }
 
-#button1{    
+#reportAddressButton{    
     background-color: rgb(235, 208, 60);
 }
-#button1:hover{
+#reportAddressButton:hover{
     background-color: rgb(235, 208, 60, 50%);
     transition: all 40ms;
 }
 
-#button2{
+#checkAddressButton{
     background-color: rgb(98, 143, 240);
-}#button2:hover{
+}#checkAddressButton:hover{
     background-color: rgba(98, 143, 240, 50%);
 }
 
-#button1, #button2{
+#reportAddressButton, #checkAddressButton{
     font-family: Roboto, Arial, Helvetica, sans-serif;    
     font-size: 20px;
     padding-top: 7px;
