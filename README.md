@@ -5,6 +5,7 @@ We envision a future where decentralised finance is defactor how modern societie
 Free from the control of the agency/institution that has nothing but pure greed in power and corruption.
 
 ## Problem Statement
+**USD3.9 billion crypto fraud in year 2022. **
 In crypto world, many ppl is getting scam/hack/rug-pull left right center. This is really bad for the industry. 
 Currently for mass users, there is almost impossible to check if the wallet belong to a malicious identity. 
 Or at least, the research part is tedious and complicated. What if there is a portal that can tell you right away if this is a trustable wallet address?
