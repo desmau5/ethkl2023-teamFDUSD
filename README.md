@@ -14,6 +14,10 @@ Contract URL at Taiko Block Explorer
 https://explorer.test.taiko.xyz/address/0xb68B2e2f9F32D513d957f127588FD4f51E54B054
 
 
+## Project overview video
+https://youtu.be/JgdZqrcbeu0
+
+
 ## About the contract functions
 The contract contains 3 functions. 
 1. reportMaliciousAddress - lets users report malicious address of bad actors in the space
